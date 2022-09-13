@@ -41,6 +41,7 @@ while(true)
             else if (item == '%')
             {
                 sb.Append("[a-zA-Z]");
+                // defaults to 2 instances if no specified {x}
                 if (!pattern.Contains("{"))
                 {
                     sb.Append("{2}");
